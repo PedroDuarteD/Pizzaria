@@ -1,0 +1,30 @@
+﻿@page
+@model Pizzaria.Pages.Forms.CustomPizzaModel
+@{
+}
+
+
+<div class=" container">
+
+	<div class="card">
+		<div class="card-header">
+			<h1>Create Your own Pizza!</h1>
+
+		</div>
+
+		<div class="card-body">
+			<form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 pb-5 rounded-5 alert-light col-4">
+				<label class="form-label">Name</label>
+				<input type="text" class="form-control" asp-for="Pizzas.name" required ></input></br>
+				<label class="form-label">Family</label>
+
+				<input type="text" class="form-control" asp-for="Pizzas.family" required></input></br>
+				<label class="form-label">Price</label>
+
+				<input type="number" class="form-control" asp-for="Pizzas.price" required></input></br>
+				<button type="submit" class="btn btn-primary mt-1">Order my Pizza</button>
+			</form>
+		</div>
+		</div>
+	
+</div>

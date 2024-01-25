@@ -1,0 +1,16 @@
+﻿@page
+@model Pizzaria.Pages.PizzaModel
+@{
+}
+
+
+<a class="nav-link text-dark" asp-area="" asp-page="Forms/CustomPizza">Create Custom Pizza</a>
+
+
+ <h1>All Pizzas </h1>
+<div> 
+	@foreach( var pizza in Model.allPizzas)
+	{
+		<div>Name: @pizza.name @pizza.price  <a asp-page="/Checkout/Checkout" asp-route-name="@pizza.name" asp-route-family="@pizza.family" asp-route-price="@pizza.price">Buy </a> </div>
+	}
+</div>

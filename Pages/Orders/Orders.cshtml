@@ -1,0 +1,10 @@
+﻿@page
+@model Pizzaria.Pages.Orders.OrdersModel
+@{
+}
+
+
+@foreach(var order in Model.allPizza)
+{
+	<div>Name: @order.name price: @order.price</div>
+}
